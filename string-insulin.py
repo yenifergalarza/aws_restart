@@ -28,3 +28,5 @@ molecularWeightInsulin = sum({x: (aaCountInsulin[x]*aaWeights[x]) for x in
 'S', 'T', 'V', 'W', 'Y']}.values())  
 print("The rough molecular weight of insulin: " +
 str(molecularWeightInsulin))
+molecularWeightInsulinActual = 5807.63
+print("Error percentage: " + str(((molecularWeightInsulin - molecularWeightInsulinActual)/molecularWeightInsulinActual)*100))
